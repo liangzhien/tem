@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="full-screen" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>rem模版</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jquery.js" type="text/javascript" charset="utf-8"  data-width=640></script>
+    <script src="js/config.js" type="text/javascript" charset="utf-8"  ></script>
+</head>
+<body>
+    <script type="text/javascript">
+    	var imgList =["images/loading.gif"];
+        var loader = new En.Loading();
+        loader.init({
+            imgs:[],
+            audioS : ['audio/1.mp3'],
+            searchImgs:{
+                dom:$('.page')[0],
+                type:'src'
+            },
+            searchBgs:{
+                type:'bg'
+            },
+            enterCallback:function(){
+                var per = this.count/this.length*100>>0;
+            },
+            callback:function(){
+			
+            }
+        });
+    </script>
+</body>
+</html>
